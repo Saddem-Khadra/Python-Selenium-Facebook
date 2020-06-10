@@ -37,7 +37,7 @@ search.send_keys(send_to)
 
 chrome_browser.implicitly_wait(10)
 
-result = chrome_browser.find_element_by_xpath("//div[div/@aria-label='Café Bader']")
+result = chrome_browser.find_element_by_xpath(f"//div[div/@aria-label='{send_to}']")
 result.click()
 
 chrome_browser.implicitly_wait(10)
